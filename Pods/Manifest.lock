@@ -1,0 +1,16 @@
+PODS:
+  - TouchVisualizer (3.0.2)
+
+DEPENDENCIES:
+  - TouchVisualizer (~> 3.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - TouchVisualizer
+
+SPEC CHECKSUMS:
+  TouchVisualizer: dfdb77c26f1efc58d9980596742de6cf115ea37e
+
+PODFILE CHECKSUM: d85b08fc46b13e7ee3e48d605902224c23fa9ec8
+
+COCOAPODS: 1.5.3
