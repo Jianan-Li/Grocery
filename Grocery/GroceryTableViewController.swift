@@ -9,6 +9,8 @@
 import UIKit
 import TouchVisualizer
 
+let showTouch = true
+
 class GroceryTableViewController: UITableViewController, UpdateModelFromCell{
     
     // Cell delegate methods
@@ -352,9 +354,11 @@ class GroceryTableViewController: UITableViewController, UpdateModelFromCell{
         setEditing(true, animated: false)
         
         // Touch visualizer setup
-        var config = Configuration()
-        config.color = #colorLiteral(red: 0.5723067522, green: 0.5723067522, blue: 0.5723067522, alpha: 1)
-        Visualizer.start(config)
+        if showTouch {
+            var config = Configuration()
+            config.color = #colorLiteral(red: 0.5723067522, green: 0.5723067522, blue: 0.5723067522, alpha: 1)
+            Visualizer.start(config)
+        }
     }
     
     // MARK: - TABLE VIEW DATA SOURCE START -----------------------------------------------------------
